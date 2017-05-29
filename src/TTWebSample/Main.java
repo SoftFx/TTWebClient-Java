@@ -1,12 +1,10 @@
 package TTWebSample;
 
 import TTWebClient.Domain.*;
-import TTWebClient.Domain.Enums.TTAccountingTypes;
-import TTWebClient.Domain.Enums.TTOrderSides;
-import TTWebClient.Domain.Enums.TTOrderTypes;
-import TTWebClient.Domain.Enums.TTStreamingDirections;
+import TTWebClient.Domain.Enums.*;
 import TTWebClient.TickTraderWebClient;
 
+import javax.print.attribute.standard.MediaSizeName;
 import java.io.Console;
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -49,8 +47,10 @@ public class Main {
         GetTradeHistory(client);
 
         LimitOrder(client);
+
+        DoQHRequests(client);
         client.close();
-        
+
         return;
     }
 
@@ -272,4 +272,39 @@ public class Main {
         }
     }
 
+
+    public static void DoQHRequests(TickTraderWebClient client) throws InterruptedException, ExecutionException, IOException, InvalidKeyException, NoSuchAlgorithmException {
+        System.out.println("QH public get");
+        TTBarsResponse barRes = client.GetPublicQuoteHistoryBars("EURUSD", "M1", TTPriceType.Ask, new Date(), 10);
+        System.out.println(String.format("Bars returned: %1$s", barRes.Bars.size()));
+        TTTicksResponse tickRes = client.GetPublicQuoteHistoryTicks("EURUSD", false, new Date(), 10);
+        System.out.println(String.format("Ticks returned: %1$s", tickRes.Ticks.size()));
+        TTTicksResponse lv2Res = client.GetPublicQuoteHistoryTicks("EURUSD", true, new Date(), 10);
+        System.out.println(String.format("Level2 ticks returned: %1$s", lv2Res.Ticks.size()));
+
+        System.out.println("QH webApi get");
+        int version = client.GetQuoteHistoryVerison();
+        System.out.println(String.format("Quote history version: %1$s",version));
+        ArrayList<String> symbolList = client.GetQuoteHistorySymbols();
+        System.out.println(String.format("Symbols count: %1$s",symbolList.size()));
+        ArrayList<String> periodicitiesList = client.GetQuoteHistoryPeriodicities("EURUSD");
+        System.out.println(String.format("%1$s periodicities:", "EURUSD"));
+        for (String p :periodicitiesList) {
+            System.out.println(p);
+        }
+        barRes = client.GetQuoteHistoryBars("EURUSD", "M1", TTPriceType.Ask, new Date(), 10);
+        System.out.println(String.format("Bars returned: %1$s", barRes.Bars.size()));
+        tickRes = client.GetQuoteHistoryTicks("EURUSD", false, new Date(), 10);
+        System.out.println(String.format("Ticks returned: %1$s", tickRes.Ticks.size()));
+        lv2Res = client.GetQuoteHistoryTicks("EURUSD", true, new Date(), 10);
+        System.out.println(String.format("Level2 ticks returned: %1$s", lv2Res.Ticks.size()));
+
+        barRes = client.GetQuoteHistoryCacheBars("EURUSD", "M1", TTPriceType.Ask, new Date(), 10);
+        System.out.println(String.format("Bars returned from cache: %1$s", barRes.Bars.size()));
+        tickRes = client.GetQuoteHistoryCacheTicks("EURUSD", false, new Date(), 10);
+        System.out.println(String.format("Ticks returned from cache: %1$s", tickRes.Ticks.size()));
+        lv2Res = client.GetQuoteHistoryCacheTicks("EURUSD", true, new Date(), 10);
+        System.out.println(String.format("Level2 ticks returned from cache: %1$s", lv2Res.Ticks.size()));
+
+    }
 }

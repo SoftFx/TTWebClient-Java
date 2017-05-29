@@ -1,6 +1,7 @@
 package TTWebClient;
 
 import TTWebClient.Domain.*;
+import TTWebClient.Domain.Enums.TTPriceType;
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 import com.sun.media.jfxmediaimpl.MediaDisposer;
@@ -480,6 +481,38 @@ public class TickTraderWebClient implements AutoCloseable {
         return GetPublicTickerAsyncEnd(GetPublicTickerAsyncStart(filter));
     }
 
+    /// <summary>
+    /// Get Quote History bars with specified periodicity
+    /// </summary>
+    /// <returns>TTBarsResonse class</returns>
+    public Future<HttpResponse> GetPublicQuoteHistoryBarsAsyncStart(String symbol, String periodicity, TTPriceType priceType, Date timestamp, int count) throws UnsupportedEncodingException {
+        return PublicHttpGetAsyncStart(String.format("api/v1/public/quotehistory/%1$s/%2$s/bars/%3$s?timestamp=%4$s&count=%5$s", symbol, periodicity, priceType.toString().toLowerCase(),
+                timestamp.getTime(), count));
+    }
+
+    public TTBarsResponse GetPublicQuoteHistoryBarsAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTBarsResponse.class, httpResponseFuture);
+    }
+
+    public TTBarsResponse GetPublicQuoteHistoryBars(String symbol, String periodicity, TTPriceType priceType, Date timestamp, int count) throws InterruptedException, ExecutionException, IOException {
+        return GetPublicQuoteHistoryBarsAsyncEnd(GetPublicQuoteHistoryBarsAsyncStart(symbol, periodicity, priceType, timestamp, count));
+    }
+
+    /// <summary>
+    /// Get Quote History ticks with specified periodicity
+    /// </summary>
+    /// <returns>TTTicksResonse class</returns>
+    public Future<HttpResponse> GetPublicQuoteHistoryTicksAsyncStart(String symbol, boolean isLevel2, Date timestamp, int count) throws UnsupportedEncodingException {
+        return PublicHttpGetAsyncStart(String.format("api/v1/public/quotehistory/%1$s/%2$s/?timestamp=%3$s&count=%4$s", symbol, isLevel2 ? "level2" : "ticks", timestamp.getTime(), count));
+    }
+
+    public TTTicksResponse GetPublicQuoteHistoryTicksAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTTicksResponse.class, httpResponseFuture);
+    }
+
+    public TTTicksResponse GetPublicQuoteHistoryTicks(String symbol, boolean isLevel2, Date timestamp, int count) throws InterruptedException, ExecutionException, IOException {
+        return GetPublicQuoteHistoryTicksAsyncEnd(GetPublicQuoteHistoryTicksAsyncStart(symbol, isLevel2, timestamp, count));
+    }
 
     /// <summary>
     /// Get account information
@@ -496,6 +529,23 @@ public class TickTraderWebClient implements AutoCloseable {
     public TTAccount GetAccount() throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
         return GetAccountAsyncEnd(GetAccountAsyncStart());
     }
+
+    /// <summary>
+    /// Get trade server information
+    /// </summary>
+    /// <returns>Trade server information</returns>
+    public Future<HttpResponse> GetTradeServerAsyncStart() throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart("api/v1/tradeserverinfo");
+    }
+
+    public TTTradeServer GetTradeServerAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTTradeSession.class, httpResponseFuture);
+    }
+
+    public TTTradeServer GetTradeServer() throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetTradeServerAsyncEnd(GetTradeServerAsyncStart());
+    }
+
 
     /// <summary>
     /// Get trade session information
@@ -918,4 +968,158 @@ public class TickTraderWebClient implements AutoCloseable {
         return GetTradeHistoryAsyncEnd(GetTradeHistoryAsyncStart(request));
     }
 
+
+    /// <summary>
+    /// Get all periodicities for specified symbol
+    /// </summary>
+    /// <returns>List of string represents periodicities</returns>
+    public Future<HttpResponse> GetQuoteHistoryPeriodicitiesAsyncStart(String symbol) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart(String.format("api/v1/quotehistory/%1$s/periodicities", symbol));
+    }
+
+    public ArrayList<String> GetQuoteHistoryPeriodicitiesAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(new TypeToken<List<String>>() {
+        }.getType(), httpResponseFuture);
+    }
+
+    public ArrayList<String> GetQuoteHistoryPeriodicities(String symbol) throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryPeriodicitiesAsyncEnd(GetQuoteHistoryPeriodicitiesAsyncStart(symbol));
+    }
+
+
+    /// <summary>
+    /// Get all symbols
+    /// </summary>
+    /// <returns>List of string represents symbols</returns>
+    public Future<HttpResponse> GetQuoteHistorySymbolsAsyncStart() throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart("api/v1/quotehistory/symbols");
+    }
+
+    public ArrayList<String> GetQuoteHistorySymbolsAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(new TypeToken<List<String>>() {
+        }.getType(), httpResponseFuture);
+    }
+
+    public ArrayList<String> GetQuoteHistorySymbols() throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistorySymbolsAsyncEnd(GetQuoteHistorySymbolsAsyncStart());
+    }
+
+
+    /// <summary>
+    /// Get quote history version
+    /// </summary>
+    /// <returns>TTBarsResonse class</returns>
+    public Future<HttpResponse> GetQuoteHistoryVerisonAsyncStart() throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart("api/v1/quotehistory/version");
+    }
+
+    public int GetQuoteHistoryVerisonAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(int.class, httpResponseFuture);
+    }
+
+    public int GetQuoteHistoryVerison() throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryVerisonAsyncEnd(GetQuoteHistoryVerisonAsyncStart());
+    }
+
+    /// <summary>
+    /// Get Quote History bars info with specified periodicity
+    /// </summary>
+    /// <returns>TTQuoteHistoryInfo class</returns>
+    public Future<HttpResponse> GetQuoteHistoryBarsInfoAsyncStart(String symbol, String periodicity, TTPriceType priceType) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart(String.format("api/v1/quotehistory/%1$s/%2$s/bars/%3$s/info", symbol, periodicity, priceType));
+    }
+
+    public TTQuoteHistoryInfo GetQuoteHistoryBarsInfoAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTQuoteHistoryInfo.class, httpResponseFuture);
+    }
+
+    public TTQuoteHistoryInfo GetQuoteHistoryBarsInfo(String symbol, String periodicity, TTPriceType priceType) throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryBarsInfoAsyncEnd(GetQuoteHistoryBarsInfoAsyncStart(symbol, periodicity, priceType));
+    }
+
+
+    /// <summary>
+    /// Get Quote History bars with specified periodicity
+    /// </summary>
+    /// <returns>TTBarsResonse class</returns>
+    public Future<HttpResponse> GetQuoteHistoryBarsAsyncStart(String symbol, String periodicity, TTPriceType priceType, Date timestamp, int count) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart(String.format("api/v1/quotehistory/%1$s/%2$s/bars/%3$s?timestamp=%4$s&count=%5$s", symbol, periodicity, priceType, timestamp.getTime(), count));
+    }
+
+    public TTBarsResponse GetQuoteHistoryBarsAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTBarsResponse.class, httpResponseFuture);
+    }
+
+    public TTBarsResponse GetQuoteHistoryBars(String symbol, String periodicity, TTPriceType priceType, Date timestamp, int count) throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryBarsAsyncEnd(GetQuoteHistoryBarsAsyncStart(symbol, periodicity, priceType, timestamp, count));
+    }
+
+
+    /// <summary>
+    /// Get Quote History ticks info with specified periodicity
+    /// </summary>
+    /// <returns>TTTicksResonse class</returns>
+    public Future<HttpResponse> GetQuoteHistoryTicksInfoAsyncStart(String symbol, boolean isLevel2) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart(String.format("api/v1/quotehistory/%1$s/%2$s/info", symbol, symbol, isLevel2 ? "level2" : "ticks"));
+    }
+
+    public TTQuoteHistoryInfo GetQuoteHistoryTicksInfoAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTQuoteHistoryInfo.class, httpResponseFuture);
+    }
+
+    public TTQuoteHistoryInfo GetQuoteHistoryTicksInfo(String symbol, boolean isLevel2) throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryTicksInfoAsyncEnd(GetQuoteHistoryTicksInfoAsyncStart(symbol, isLevel2));
+    }
+
+
+    /// <summary>
+    /// Get Quote History ticks with specified periodicity
+    /// </summary>
+    /// <param name="filter">Symbols names separated by space character</param>
+    /// <returns>TTTicksResonse class</returns>
+    public Future<HttpResponse> GetQuoteHistoryTicksAsyncStart(String symbol, boolean isLevel2, Date timestamp, int count) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart(String.format("api/v1/quotehistory/%1$s/%2$s?timestamp=%3$s&count=%4$s",symbol, isLevel2 ? "level2" : "ticks", timestamp.getTime(), count));
+    }
+
+    public TTTicksResponse GetQuoteHistoryTicksAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTTicksResponse.class, httpResponseFuture);
+    }
+
+    public TTTicksResponse GetQuoteHistoryTicks(String symbol, boolean isLevel2, Date timestamp, int count) throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryTicksAsyncEnd(GetQuoteHistoryTicksAsyncStart(symbol, isLevel2, timestamp, count));
+    }
+
+
+    /// <summary>
+    /// Get Quote History bars with specified periodicity
+    /// </summary>
+    /// <returns>TTBarsResonse class</returns>
+    public Future<HttpResponse> GetQuoteHistoryCacheBarsAsyncStart(String symbol, String periodicity, TTPriceType priceType, Date timestamp, int count) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart(String.format("api/v1/quotehistory/cache/%1$s/%2$s/bars/%3$s?timestamp=%4$s&count=%5$s", symbol, periodicity, priceType, timestamp.getTime(), count));
+    }
+
+    public TTBarsResponse GetQuoteHistoryCacheBarsAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTBarsResponse.class, httpResponseFuture);
+    }
+
+    public TTBarsResponse GetQuoteHistoryCacheBars(String symbol, String periodicity, TTPriceType priceType, Date timestamp, int count) throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryBarsAsyncEnd(GetQuoteHistoryBarsAsyncStart(symbol, periodicity, priceType, timestamp, count));
+    }
+
+
+    /// <summary>
+    /// Get Quote History ticks with specified periodicity
+    /// </summary>
+    /// <returns>TTTicksResonse class</returns>
+    public Future<HttpResponse> GetQuoteHistoryCacheTicksAsyncStart(String symbol, boolean isLevel2, Date timestamp, int count) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return PrivateHttpGetAsyncStart(String.format("api/v1/quotehistory/cache/%1$s/%2$s?timestamp=%3$s&count=%4$s",symbol, isLevel2 ? "level2" : "ticks", timestamp.getTime(), count));
+    }
+
+    public TTTicksResponse GetQuoteHistoryCacheTicksAsyncEnd(Future<HttpResponse> httpResponseFuture) throws ExecutionException, InterruptedException, IOException {
+        return HttpRequestEnd(TTTicksResponse.class, httpResponseFuture);
+    }
+
+    public TTTicksResponse GetQuoteHistoryCacheTicks(String symbol, boolean isLevel2, Date timestamp, int count) throws InterruptedException, ExecutionException, IOException, NoSuchAlgorithmException, InvalidKeyException {
+        return GetQuoteHistoryTicksAsyncEnd(GetQuoteHistoryTicksAsyncStart(symbol, isLevel2, timestamp, count));
+    }
 }

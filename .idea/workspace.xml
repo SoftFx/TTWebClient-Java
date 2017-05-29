@@ -2,139 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b89f54-f8db-4ad0-8506-a26d2816677c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/gson-2.8.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/commons-codec-1.9.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/commons-logging-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/httpasyncclient-4.1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/httpasyncclient-cache-4.1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/httpclient-4.5.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/httpclient-cache-4.5.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/httpcore-4.4.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/httpcore-nio-4.4.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/TTWebClient/JavaTTREST.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTAccountingTypes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTCommissionChargeMethod.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTCommissionChargeType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTCommissionValueType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTMarginCalculationModes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTOrderSides.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTOrderStatuses.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTOrderTypes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTPriceType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTProfitCalculationModes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTStreamingDirections.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTTradeDeleteTypes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTTradeSessionStatus.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTTradeTransReasons.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/Enums/TTTradeTransTypes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTAccount.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTAsset.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTCurrency.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTFeedLevel2Record.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTFeedTick.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTFeedTickLevel2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTPosition.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTSymbol.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTicker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTrade.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTradeCreate.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTradeDelete.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTradeHistory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTradeHistoryReport.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTradeHistoryRequest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTradeModify.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/Domain/TTTradeSession.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/RequestContentHMACHeader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$18.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$20.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$21.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$22.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$23.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$24.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$CreatePrivateHttpClientWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient$CreatePublicHttpClientWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebClient/TickTraderWebClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaTTREST/TTWebSample/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaTTREST_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_8_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/project-template.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTTREST.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/NOTICE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/RELEASE_NOTES.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientAuthentication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientCustomContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientCustomSSL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientEvictExpiredConnections.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientExecuteProxy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchangeFutureCallback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientHttpExchangeStreaming.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientPipelined.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientPipelinedStreaming.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/AsyncClientProxyAuthentication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/QuickStart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/examples/org/apache/http/examples/nio/client/ZeroCopyHttpExchange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTAccountingTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTCommissionChargeMethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTCommissionChargeType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTCommissionValueType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTMarginCalculationModes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTOrderSides.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTOrderStatuses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTOrderTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTPriceType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTProfitCalculationModes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTStreamingDirections.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTTradeDeleteTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTTradeSessionStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTTradeTransReasons.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTTradeTransTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTAccount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTAsset.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTCurrency.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTFeedLevel2Record.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTFeedTick.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTFeedTickLevel2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTPosition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTSymbol.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTicker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTrade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeCreate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeDelete.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeHistory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeHistoryReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeHistoryRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeModify.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeSession.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/RequestContentHMACHeader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebSample/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTBar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTBarsResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTQuoteHistoryInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTicksResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java" afterPath="$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TTWebSample/Main.java" afterPath="$PROJECT_DIR$/src/TTWebSample/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,21 +22,79 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TickTraderWebClient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TickTraderWebClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+            <state relative-caret-position="539">
+              <caret line="1114" column="125" lean-forward="false" selection-start-line="1114" selection-start-column="125" selection-end-line="1114" selection-end-column="125" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TTQuoteHistoryInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTQuoteHistoryInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TTTradeServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TTTicksResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTTicksResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TTBarsResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTBarsResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TTBar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TTWebSample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+            <state relative-caret-position="408">
+              <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -199,60 +132,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpMessage.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/httpcomponents-asyncclient-4.1.3/lib/httpcore-4.4.6.jar!/org/apache/http/HttpMessage.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TTTradeHistoryReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeHistoryReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TTTradeCreate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeCreate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TTOrderSides.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTOrderSides.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TTAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -265,8 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HttpClient</find>
-      <find>_webApiAddress</find>
       <find>PublicHttpGetAsync</find>
       <find>DateTime</find>
       <find>ConvertToSync</find>
@@ -295,6 +172,8 @@
       <find>httpResponseFuture.get();</find>
       <find>_gson</find>
       <find>Disp</find>
+      <find>{ get; set; }</find>
+      <find>Date</find>
     </findStrings>
     <replaceStrings>
       <replace>Long</replace>
@@ -318,11 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeTransTypes.java" />
-        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeTransReasons.java" />
-        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTOrderTypes.java" />
-        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTOrderSides.java" />
-        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeHistoryReport.java" />
         <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTStreamingDirections.java" />
         <option value="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTAccountingTypes.java" />
         <option value="$PROJECT_DIR$/src/TTWebClient/Domain/Enums/TTOrderSides.java" />
@@ -367,8 +241,13 @@
         <option value="$PROJECT_DIR$/httpcomponents-asyncclient-4.1.3/lib/httpcore-4.4.6.jar!/org/apache/http/entity/ContentType.class" />
         <option value="$PROJECT_DIR$/httpcomponents-asyncclient-4.1.3/lib/httpcore-4.4.6.jar!/org/apache/http/entity/StringEntity.class" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java" />
+        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTBarsResponse.java" />
+        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTBar.java" />
+        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTTicksResponse.java" />
+        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeServer.java" />
+        <option value="$PROJECT_DIR$/src/TTWebClient/Domain/TTQuoteHistoryInfo.java" />
         <option value="$PROJECT_DIR$/src/TTWebSample/Main.java" />
+        <option value="$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java" />
       </list>
     </option>
   </component>
@@ -379,7 +258,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -404,53 +283,35 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTTREST" />
+              <option name="myItemId" value="TTWebClient-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTTREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTTREST" />
+              <option name="myItemId" value="TTWebClient-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTTREST" />
+              <option name="myItemId" value="TTWebClient-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTTREST" />
+              <option name="myItemId" value="TTWebClient-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTWebSample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTTREST" />
+              <option name="myItemId" value="TTWebClient-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTTREST" />
+              <option name="myItemId" value="TTWebClient-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -459,6 +320,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TTWebClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTWebClient-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTWebClient-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTWebClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,7 +354,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/JavaBase" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -885,12 +768,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495187265985</updated>
       <workItem from="1495187268775" duration="70967000" />
-      <workItem from="1495724559254" duration="31000" />
+      <workItem from="1495724559254" duration="9524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70998000" />
+    <option name="totallyTimeSpent" value="80491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -902,7 +785,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -915,7 +798,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31852654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -953,21 +836,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar!/org/apache/http/impl/client/HttpClientBuilder.class" />
-    <entry file="jar://$PROJECT_DIR$/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar!/org/apache/http/impl/client/HttpClients.class" />
-    <entry file="jar://$PROJECT_DIR$/httpcomponents-client-4.5.3/lib/httpcore-4.4.6.jar!/org/apache/http/ssl/SSLContextBuilder.class" />
-    <entry file="jar://$PROJECT_DIR$/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar!/org/apache/http/client/methods/HttpGet.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="1123" column="16" lean-forward="false" selection-start-line="1123" selection-start-column="12" selection-end-line="1123" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -975,6 +848,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -989,6 +863,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,6 +881,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,6 +889,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,9 +1046,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,9 +1057,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,19 +1105,67 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java">
+    <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTBarsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTTicksResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTTradeServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TTWebClient/Domain/TTQuoteHistoryInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TTWebSample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TTWebClient/TickTraderWebClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="1114" column="125" lean-forward="false" selection-start-line="1114" selection-start-column="125" selection-end-line="1114" selection-end-column="125" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
